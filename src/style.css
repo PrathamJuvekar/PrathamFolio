@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom CSS using @apply comes after */
+
+
+/* ================= Layout ================= */
+.app-container {
+  @apply bg-github-black text-white min-h-screen font-mono;
+}
+
+.app-main {
+  @apply px-6 py-12 md:py-16;
+}
+
+.welcome-heading {
+  @apply text-3xl md:text-4xl font-bold mb-4;
+}
+
+/* ================= Hero Section ================= */
+.hero {
+  @apply py-24 md:py-32 bg-github-dark text-white text-center;
+}
+
+.hero-content {
+  @apply max-w-3xl mx-auto px-4;
+}
+
+.hero-box {
+  @apply bg-[#0d1117] border border-gray-700 rounded-2xl px-6 py-6 text-left text-gray-300 shadow-md;
+}
+
+.hero-heading {
+  @apply text-3xl md:text-4xl font-semibold mb-3;
+}
+
+.hero-subtext {
+  @apply text-base md:text-lg text-gray-400 leading-relaxed;
+}
+
+.hero-buttons {
+  @apply flex justify-center gap-4 flex-wrap mt-6;
+}
+
+.btn-primary {
+  @apply bg-github-panel hover:bg-github-deep text-white font-medium py-2 px-6 rounded-md transition duration-200;
+}
+
+.btn-secondary {
+  @apply border border-github-panel text-white hover:bg-github-panel hover:text-white font-medium py-2 px-6 rounded-md transition duration-200;
+}
+
+/* ================= About Section ================= */
+.about {
+  @apply bg-github-deep text-white py-20 px-6;
+}
+
+.about-content {
+  @apply max-w-3xl mx-auto text-center;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-6 text-white;
+}
+
+.about-text {
+  @apply text-github-gray text-base leading-relaxed mb-4;
+}
+
+/* ================= Projects Section ================= */
+.projects {
+  @apply bg-github-deep text-white py-20 px-6;
+}
+
+.projects-container {
+  @apply max-w-6xl mx-auto;
+}
+
+.projects-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.project-card {
+  @apply bg-github-panel border border-github-dark rounded-lg p-6 shadow-sm transition-transform duration-300 hover:scale-[1.015] hover:shadow-md;
+}
+
+.project-title {
+  @apply text-xl font-semibold mb-2;
+}
+
+.project-description {
+  @apply text-github-gray text-sm mb-4;
+}
+
+.project-tags {
+  @apply flex flex-wrap gap-2;
+}
+
+.tag {
+  @apply bg-github-dark text-sm text-white px-3 py-1 rounded-full border border-github-deep;
+}
+
+/* ========== Footer ========== */
+.footer {
+  @apply bg-github-black text-white py-8 border-t border-github-panel ;
+}
+
+.footer-content {
+  @apply max-w-5xl mx-auto px-6 text-center space-y-3;
+}
+
+.footer-text {
+  @apply text-sm text-github-gray;
+}
+
+.footer-subtext {
+  @apply text-sm text-github-gray;
+}
+
+.tech-highlight {
+  @apply text-github-accent font-medium hover:text-github-gray;
+}
+
+.footer-socials {
+  @apply flex justify-center gap-6 mt-4 text-2xl;
+}
+
+.footer-socials a {
+  @apply text-github-gray hover:text-github-panel transition;
+}
+
+/* ======= Skills Section ======= */
+.skills-section {
+  @apply bg-github-panel text-white py-20 px-6;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-center mb-12;
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  margin-bottom: 3rem;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  gap: 3rem;
+}
+
+.marquee-left {
+  animation: marquee-left 45s linear infinite;
+}
+
+.marquee-right {
+  animation: marquee-right 45s linear infinite;
+}
+
+.skill-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.25);
+  animation-play-state: paused;
+}
+
+.marquee-wrapper:hover .marquee-left,
+.marquee-wrapper:hover .marquee-right {
+  animation-play-state: paused !important;
+}
+
+/* Keyframes */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-33.333%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Workexp*/
+.experience-section {
+  @apply bg-github-dark text-white py-20 px-6;
+}
+
+.experience-container {
+  @apply max-w-4xl mx-auto;
+}
+
+.experience-card {
+  @apply bg-github-dark border border-github-gray rounded-lg p-6 mt-6 shadow-md;
+}
+
+.experience-header {
+  @apply flex justify-between items-center;
+}
+
+.experience-role {
+  @apply text-lg font-semibold;
+}
+
+.experience-company {
+  @apply text-sm text-github-gray mt-1;
+}
+
+.experience-duration {
+  @apply text-sm text-github-gray;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold mb-6 text-white;
+}
+
+
