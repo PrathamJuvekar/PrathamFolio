@@ -1,12 +1,35 @@
-# React + Vite
+# Pratham Juvekar –Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A developer portfolio built with React + Vite + Tailwind CSS.
+Showcasing my projects, skills and experience in a sleek, dark-themed UI.
 
-Currently, two official plugins are available:
+Live Demo: [PrathamFolio](https://prathamjuvekar.github.io/PrathamFolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+--Features--
 
-## Expanding the ESLint configuration
+ GitHub-Inspired Design – Dark theme, minimal, clean look
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ Hamburger Navigation – Smooth animated sidebar menu (desktop + mobile)
+
+ Hero Section – Intro with personal branding
+ 
+ About Me – Short bio with background and journey
+
+ Skills Section – Animated infinite loop skills carousel
+
+ Projects Section – Highlighted works with live/demo links
+
+ Experience – Internship / work history
+
+ Fully Responsive – Optimized for all screen sizes
+
+
+--Tech Stack--
+
+Frontend: React (Vite)
+
+Styling: Tailwind CSS
+
+Icons: React Icons, Font Awesome
+
+Deployment: GitHub Pages
